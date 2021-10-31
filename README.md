@@ -1,5 +1,23 @@
 # My-React-app
 
+# How to run!
+
+Please follow the below instructions to run this project in your computer:
+
+1. Clone this repository:
+
+```sh
+gh repo clone Pankaj7288/My-React-app
+```
+
+2. Run
+
+```sh
+yarn
+```
+
+3. Your app should be available in `http://localhost:3000`
+
 ## Getting Started with Create React App
 
 The most common approach is to use Create React App:
@@ -97,6 +115,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -249,7 +268,7 @@ Paste the below json in the newly created settings.json file and save the file.
 
 ### VsCode Plugins
 
-Must need:
+You need must to install the below plugins:
 
 1. `ESLint`
 2. `Prettier - Code formatter`
