@@ -1,5 +1,6 @@
 {
   // editor
+  "workbench.colorTheme": "Learn with Sumit Theme", //Theme
   "editor.fontSize": 20,
   "editor.fontFamily": "Operator Mono Lig, Victor Mono, Fira Code",
   "editor.fontLigatures": true,
@@ -21,81 +22,38 @@
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
   },
+  "javascript.validate.enable": false, //disable all built-in syntax checking
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
     "source.organizeImports": true
   },
-  "eslint.alwaysShowStatus": true,
-  //terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "MesloLGS NF, Operator Mono Lig, Victor Mono, Fira Code",
-  "workbench.iconTheme": "vscode-icons",
-  // terminal customization
-  "workbench.colorCustomizations": {
-    "terminal.background": "#031c2b",
-    "terminal.foreground": "#bb71b5",
-    "terminalCursor.background": "#FAC03B",
-    "terminalCursor.foreground": "#FAC03B",
-    "terminal.ansiBlack": "#1D2021",
-    "terminal.ansiBlue": "#0D6678",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#0D6678",
-    "terminal.ansiBrightCyan": "#8BA59B",
-    "terminal.ansiBrightGreen": "#95C085",
-    "terminal.ansiBrightMagenta": "#8F4673",
-    "terminal.ansiBrightRed": "#FB543F",
-    "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#FAC03B",
-    "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#95C085",
-    "terminal.ansiMagenta": "#8F4673",
-    "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#A89984",
-    "terminal.ansiYellow": "#FAC03B"
-  },
-  "editor.formatOnPaste": true,
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "workbench.colorTheme": "Learn with Sumit Theme", //Theme
-  "security.workspace.trust.untrustedFiles": "open",
-  "files.associations": {
-    "*.json": "json",
-    "*.js": "javascript"
-  },
-  "tabnine.experimentalAutoImports": true,
-  "window.zoomLevel": 1,
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.runInTerminal": false,
-  "code-runner.showExecutionMessage": false,
-  "code-runner.saveFileBeforeRun": true,
-  "code-runner.defaultLanguage": "JavaScript",
-  "bracketPairColorizer.highlightActiveScope": true,
-  "turboConsoleLog.includeFileNameAndLineNum": false,
-  "turboConsoleLog.logMessagePrefix": "",
-  "turboConsoleLog.quote": "`",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true,
   "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  //tailwindCSS
+
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "javascript": "javascript",
     "html": "HTML"
   },
-  "editor.quickSuggestions": {
-    "strings": true
-  },
+  //others
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSave": "afterDelay",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  }
+  "files.autoSave": "afterDelay"
 }
