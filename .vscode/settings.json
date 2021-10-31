@@ -65,7 +65,7 @@
   },
   "editor.formatOnPaste": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "workbench.colorTheme": "Learn with Sumit Theme",//Theme
+  "workbench.colorTheme": "Learn with Sumit Theme", //Theme
   "security.workspace.trust.untrustedFiles": "open",
   "files.associations": {
     "*.json": "json",

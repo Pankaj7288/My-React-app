@@ -35,9 +35,9 @@
       "error",
       {
         "trailingComma": "es5",
-        "singleQuote": true,
+        // "singleQuote": true,
         "printWidth": 100,
-        "tabWidth": 4,
+        // "tabWidth": 4,
         "semi": true,
         "endOfLine": "auto"
       }

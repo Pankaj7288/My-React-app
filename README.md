@@ -171,9 +171,9 @@ Create a `.eslintrc` file in the project root and enter the below contents:
       "error",
       {
         "trailingComma": "es5",
-        "singleQuote": true,
+        // "singleQuote": true,
         "printWidth": 100,
-        "tabWidth": 4,
+        // "tabWidth": 4,
         "semi": true,
         "endOfLine": "auto"
       }
