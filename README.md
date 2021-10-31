@@ -247,4 +247,11 @@ Paste the below json in the newly created settings.json file and save the file.
 }
 ```
 
+### VsCode Plugins
+
+Must need:
+
+1. `ESLint`
+2. `Prettier - Code formatter`
+
 ### Thanks
