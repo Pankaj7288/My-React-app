@@ -41,7 +41,7 @@ Once it’s installed, update your `scripts` in your `package.json` file to use 
 
 Next, create a `craco.config.js` at the root of our project and add the `tailwindcss` and `autoprefixer` as PostCSS plugins:
 
-```json
+```conf
 
 // craco.config.js
 module.exports = {
@@ -68,7 +68,7 @@ npx tailwindcss-cli@latest init
 This will create a minimal `tailwind.config.js` file at the root of your project.
 Next, configure your `tailwind.config.js` file:
 
-```json
+```conf
 // tailwind.config.js
   module.exports = {
 
@@ -88,7 +88,7 @@ Next, configure your `tailwind.config.js` file:
 
 Open the `./src/index.css` file that Create React App generates for you by default and use the `@tailwind` directive to include Tailwind’s `base`, `components`, and `utilities` styles, replacing the original file contents:
 
-```json
+```css
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
@@ -97,7 +97,7 @@ Open the `./src/index.css` file that Create React App generates for you by defau
 
 Finally, ensure your CSS file is being imported in your `./src/index.js` file:
 
-```json
+```js
 // src/index.js
   import React from 'react';
   import ReactDOM from 'react-dom';
