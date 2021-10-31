@@ -14,8 +14,8 @@ git clone https://github.com/Pankaj7288/My-React-app.git
 
 ```sh
 yarn
+yarn start
 ```
-
 3. Your app should be available in `http://localhost:3000`
 
 ## Getting Started with Create React App
