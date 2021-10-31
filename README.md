@@ -41,7 +41,7 @@ Once it’s installed, update your `scripts` in your `package.json` file to use 
 
 Next, create a `craco.config.js` at the root of our project and add the `tailwindcss` and `autoprefixer` as PostCSS plugins:
 
-```json
+```js
 
 // craco.config.js
 module.exports = {
@@ -68,7 +68,7 @@ npx tailwindcss-cli@latest init
 This will create a minimal `tailwind.config.js` file at the root of your project.
 Next, configure your `tailwind.config.js` file:
 
-```json
+```js
 // tailwind.config.js
   module.exports = {
 
@@ -88,7 +88,7 @@ Next, configure your `tailwind.config.js` file:
 
 Open the `./src/index.css` file that Create React App generates for you by default and use the `@tailwind` directive to include Tailwind’s `base`, `components`, and `utilities` styles, replacing the original file contents:
 
-```json
+```css
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
@@ -97,7 +97,7 @@ Open the `./src/index.css` file that Create React App generates for you by defau
 
 Finally, ensure your CSS file is being imported in your `./src/index.js` file:
 
-```json
+```js
 // src/index.js
   import React from 'react';
   import ReactDOM from 'react-dom';
@@ -182,3 +182,116 @@ Create a `.eslintrc` file in the project root and enter the below contents:
   "plugins": ["prettier", "react", "react-hooks"]
 }
 ```
+## Editor Settings
+
+Follow the below settings for VS Code -
+
+    Create a new folder called ".vscode" inside the project root folder
+    Create a new file called "settings.json" inside that folder.
+    Paste the below json in the newly created settings.json file and save the file.
+```json
+{
+  // editor
+  "editor.fontSize": 20,
+  "editor.fontFamily": "Operator Mono Lig, Victor Mono, Fira Code",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // cursor
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  //terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "MesloLGS NF, Operator Mono Lig, Victor Mono, Fira Code",
+  "workbench.iconTheme": "vscode-icons",
+  // terminal customization
+  "workbench.colorCustomizations": {
+    "terminal.background": "#031c2b",
+    "terminal.foreground": "#bb71b5",
+    "terminalCursor.background": "#FAC03B",
+    "terminalCursor.foreground": "#FAC03B",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBlue": "#0D6678",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#95C085",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#FB543F",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
+  },
+  "editor.formatOnPaste": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.colorTheme": "Learn with Sumit Theme",//Theme
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.associations": {
+    "*.json": "json",
+    "*.js": "javascript"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "window.zoomLevel": 1,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": false,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.defaultLanguage": "JavaScript",
+  "bracketPairColorizer.highlightActiveScope": true,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.quote": "`",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "eslint.format.enable": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "afterDelay",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
+
+```
+
+### Thanks
