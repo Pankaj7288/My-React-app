@@ -7,7 +7,7 @@ Please follow the below instructions to run this project in your computer:
 1. Clone this repository:
 
 ```sh
-gh repo clone Pankaj7288/My-React-app
+git clone https://github.com/Pankaj7288/My-React-app.git
 ```
 
 2. Run
